@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  background-color: hsl(217, 54%, 11%);
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 22rem;
+  border-radius: 0.9rem;
+  margin: 3rem auto;
+  padding: 1.56rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.equilibrium,
+.equilibrium:link,
+.equilibrium:visited {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+.color-changing-img {
+  position: relative;
+}
+.color-changing-img div {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 98%;
+  background-color: hsl(178, 100%, 50%, 50%);
+  opacity: 0;
+  z-index: 999;
+  border-radius: 12px;
+}
+.color-changing-img div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.icon-view {
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  transform: translate(-50%, -50%);
+  opacity: 2;
+}
+.main-heading:link,
+.main-heading:visited {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.main-heading:hover,
+.main-heading:active {
+  color: hsl(178, 100%, 50%);
+}
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+.days-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.number {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+.ethereum-img {
+  margin-right: 0.438rem;
+}
+.number-days {
+  display: flex;
+  align-items: center;
+  color: hsl(215, 51%, 70%);
+}
+.clock {
+  margin-right: 0.438rem;
+}
+.avatar {
+  width: 12%;
+  margin-right: 0.9rem;
+  border: 0.125rem solid hsl(0, 0%, 100%);
+  border-radius: 100%;
+}
+.avtr-creation {
+  display: flex;
+}
+.creation-text {
+  color: hsl(215, 51%, 70%);
+}
+.author:link,
+.author:visited {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  margin-left: 0.3rem;
+}
+.author:hover,
+.author:active {
+  color: hsl(178, 100%, 50%);
+}
+hr {
+  height: 0.053rem;
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+}
+
+@media (max-width: 24em) {
+  main {
+    max-width: 20rem;
+    margin-top: 5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
